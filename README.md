@@ -9,6 +9,7 @@ bash
 git clone https://github.com/cybern0/capture-kapoaka.git
 
 # Realease
+https://github.com/cybern0/capture-kapoaka/releases
 
 # Usage
 
@@ -28,4 +29,5 @@ Choose your character by clicking the left or right mouse button.
 
 Finally, exit or restart the game by clicking the "Exit/Restart" button.
 
-# Project Link: https://github.com/cybern0/capture-kapoaka
+# Project Link: 
+https://github.com/cybern0/capture-kapoaka
