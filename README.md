@@ -4,7 +4,6 @@ Capture Kapoaka
 
 
 # Clone the repository
-bash
 
 git clone https://github.com/cybern0/capture-kapoaka.git
 cd capture-kapoaka
