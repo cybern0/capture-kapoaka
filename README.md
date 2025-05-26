@@ -7,6 +7,8 @@ Capture Kapoaka
 bash
 
 git clone https://github.com/cybern0/capture-kapoaka.git
+cd capture-kapoaka
+git clone --recursive -b 3.x https://github.com/godotengine/godot-cpp
 
 # Realease
 https://tomefy.itch.io/capture-kapoaka
