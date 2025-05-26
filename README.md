@@ -9,7 +9,7 @@ bash
 git clone https://github.com/cybern0/capture-kapoaka.git
 
 # Realease
-https://github.com/cybern0/capture-kapoaka/releases
+https://tomefy.itch.io/capture-kapoaka
 
 # Usage
 
