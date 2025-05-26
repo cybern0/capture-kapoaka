@@ -1,0 +1,260 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Game/Level/Level.gdns" type="Script" id=1]
+[ext_resource path="res://Blend/World/World.tres" type="MeshLibrary" id=2]
+[ext_resource path="res://Audio/backGrounf/Action 5 (Loop).wav" type="AudioStream" id=3]
+[ext_resource path="res://Blend/Skyboxes/AllSkyFree_Sky_MoonBurst_Equirect.png" type="Texture" id=4]
+
+[sub_resource type="CylinderShape" id=5]
+
+[sub_resource type="CylinderMesh" id=6]
+
+[sub_resource type="ORMSpatialMaterial" id=4]
+albedo_color = Color( 0.964706, 0.741176, 0.352941, 1 )
+
+[sub_resource type="PanoramaSky" id=1]
+panorama = ExtResource( 4 )
+
+[sub_resource type="Environment" id=7]
+background_mode = 2
+background_sky = SubResource( 1 )
+fog_enabled = true
+fog_color = Color( 0.0745098, 0.0901961, 0.117647, 1 )
+fog_sun_color = Color( 0.564706, 0.729412, 0.92549, 1 )
+fog_sun_amount = 0.13
+fog_depth_begin = 0.0
+fog_depth_end = 1024.7
+fog_depth_curve = 0.615572
+fog_height_min = 148.2
+fog_height_max = -171.5
+ssao_radius = 8.1
+ssao_intensity = 4.3
+ssao_radius2 = 40.7
+ssao_intensity2 = 14.6
+ssao_bias = 0.059
+ssao_color = Color( 0.180392, 0.207843, 0.25098, 1 )
+glow_enabled = true
+glow_intensity = 1.86
+glow_strength = 0.87
+glow_bloom = 0.02
+glow_hdr_threshold = 0.44
+glow_bicubic_upscale = true
+
+[sub_resource type="ConvexPolygonShape" id=10]
+points = PoolVector3Array( 0.184038, -0.982441, -0.982441, 0.184038, 0.982441, 0.982441, 0.306731, 0.981785, 0.951032, -0.18408, 0.982434, -0.982434, -0.982432, -0.982623, 0.184098, 0.98243, -0.982666, 0.184106, 0.917016, 0.978348, -0.397238, -0.982432, 0.982623, 0.184098, -0.18408, -0.982434, 0.982434, -0.79176, -0.974761, -0.60913, -0.609138, 0.97476, 0.791754, 0.917016, 0.978348, 0.397238, 0.609111, -0.974785, 0.791775, -0.917023, 0.978309, -0.397223, 0.853885, -0.976024, -0.518202, 0.5183, 0.975911, -0.853827, -0.79176, -0.974761, 0.60913, -0.518332, -0.975889, -0.853807, -0.609138, 0.97476, -0.791754, -0.982432, -0.982623, -0.184098, 0.184038, -0.982441, 0.982441, 0.98243, 0.982666, -0.184106, 0.642894, 0.979738, 0.765301, -0.18408, 0.982434, 0.982434, 0.642894, -0.979738, -0.765301, 0.853885, -0.976024, 0.518202, -0.518332, -0.975889, 0.853807, -0.853813, 0.975892, 0.518323, 0.98243, -0.982666, -0.184106, 0.184038, 0.982441, -0.982441, -0.18408, -0.982434, -0.982434, 0.791813, 0.974646, -0.609058, 0.98243, 0.982666, 0.184106, -0.982432, 0.982623, -0.184098, 0.397198, -0.978324, -0.917035, -0.397393, 0.978225, 0.916943, -0.917023, -0.978309, 0.397223, -0.397393, 0.978225, -0.916943, -0.707103, 0.983887, -0.707097, 0.459081, -0.979594, 0.887733, 0.791813, 0.974646, 0.609058, -0.917023, -0.978309, -0.397223, -0.707103, -0.983887, -0.707097, -0.707103, -0.983887, 0.707097, -0.707103, 0.983887, 0.707097, 0.5183, 0.975911, 0.853827, -0.853813, 0.975892, -0.518323, 0.642894, 0.979738, -0.765301, 0.95108, -0.981878, 0.306596, 0.95108, -0.981878, -0.306596, 0.306731, 0.981785, -0.951032, -0.306598, -0.981834, 0.951079, -0.306598, -0.981834, -0.951079, -0.951084, 0.981837, 0.306584, 0.791813, -0.974646, 0.609058, 0.791813, -0.974646, -0.609058, 0.306731, -0.981785, 0.951032, 0.5183, -0.975911, -0.853827, -0.951084, -0.981837, -0.306584, 0.397198, 0.978324, 0.917035, 0.459081, 0.979594, -0.887733, -0.853813, -0.975892, -0.518323, -0.853813, -0.975892, 0.518323, -0.518332, 0.975889, -0.853807 )
+
+[sub_resource type="BoxShape" id=12]
+
+[sub_resource type="ConvexPolygonShape" id=11]
+points = PoolVector3Array( 0.980344, 0.183469, 0.0315765, -0.977477, -0.183355, -0.0904639, -0.942976, -0.274012, -0.181475, 0.152638, -0.666639, 0.728356, -0.211037, 0.78831, 0.576929, 0.184627, -0.0915623, -0.976969, -0.180659, 0.817713, -0.543999, 0.243737, -0.909689, -0.332273, -0.121109, 0.152902, 0.979443, -0.542369, -0.724769, 0.423657, 0.604588, 0.724305, -0.330643, 0.634171, 0.391896, 0.664077, -0.879055, 0.30349, 0.365178, -0.542663, -0.422869, -0.723919, 0.852268, -0.51673, 0.0618464, -0.724288, 0.332336, -0.603236, 0.760092, -0.121365, -0.636416, 0.638071, -0.242667, 0.728959, -0.394561, 0.913095, -0.090039, 0.365549, 0.911196, 0.18319, -0.394563, -0.913101, -0.0900396, -0.604357, -0.242246, 0.757853, 0.213378, 0.424522, -0.878365, 0.274246, -0.910695, 0.304605, 0.152873, -0.667673, -0.727284, -0.332904, 0.24293, -0.909566, -0.81657, 0.545227, -0.18048, -0.66277, 0.513033, 0.544283, 0.604588, -0.724305, -0.330643, 0.243867, 0.637198, 0.72921, 0.72941, 0.637067, 0.243636, 0.154338, -0.0917767, 0.981459, 0.725418, 0.331819, -0.602295, -0.878399, -0.424493, 0.213305, 0.183583, 0.911941, -0.363567, -0.421858, -0.785457, -0.451916, 0.914484, 0.0608556, 0.39687, -0.210819, -0.423921, 0.879321, 0.726184, -0.513491, 0.454125, -0.727607, -0.667903, -0.150675, -0.120499, -0.943345, 0.305321, -0.181559, -0.365207, -0.911834, 0.91196, -0.182062, -0.363143, -0.515036, 0.242882, 0.820499, 0.544268, -0.42236, -0.723047, -0.604368, 0.756914, 0.243303, -0.121291, 0.980187, 0.1542, -0.635139, -0.151483, -0.756166, -0.943463, 0.121804, -0.30354, 0.367302, 0.152596, 0.916499, -0.51232, 0.664268, -0.542354, -0.879829, -0.121426, 0.456646, 0.518226, -0.851837, 0.0618928, 0.879357, 0.423865, -0.210791, 0.516935, 0.0908844, -0.848445, -0.241747, 0.516022, 0.820527, 0.272964, 0.694959, -0.663439, 0.0928529, -0.978183, -0.18213, -0.330847, -0.724301, 0.604471, 0.304022, 0.81782, 0.485737, -0.180675, 0.545253, -0.816525, 0.979185, -0.152614, 0.123244, -0.150676, -0.728822, -0.666713, -0.977374, 0.183336, 0.0926544 )
+
+[node name="Level2" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 40, 0, 0, 0, 1, 0, 0, 0, 40, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+mesh = SubResource( 6 )
+material/0 = SubResource( 4 )
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 2 )
+data = {
+"cells": PoolIntArray( 1, 0, 26, 2, 0, 25, 4, 0, 58, 5, 0, 26, 8, 0, 61, 9, 0, 61, 15, 0, 51, 65519, 0, 25, 65520, 0, 25, 65526, 0, 27, 65528, 0, 27, 65529, 0, 59, 65530, 0, 59, 65531, 0, 59, 65532, 0, 59, 65533, 0, 59, 65534, 0, 59, 65535, 0, 59, 0, 1, 30, 1, 1, 26, 2, 1, 34, 3, 1, 25, 4, 1, 58, 6, 1, 10, 8, 1, 25, 9, 1, 25, 15, 1, 51, 65518, 1, 25, 65521, 1, 28, 65525, 1, 59, 65526, 1, 59, 65527, 1, 59, 65528, 1, 59, 65529, 1, 25, 65531, 1, 35, 65532, 1, 57, 65534, 1, 52, 65535, 1, 33, 1, 2, 34, 2, 2, 30, 3, 2, 26, 4, 2, 58, 5, 2, 25, 7, 2, 25, 8, 2, 27, 9, 2, 33, 12, 2, 12, 15, 2, 51, 16, 2, 10, 65517, 2, 25, 65526, 2, 27, 65527, 2, 27, 65528, 2, 25, 65529, 2, 35, 65530, 2, 26, 65533, 2, 52, 65534, 2, 52, 65535, 2, 34, 0, 3, 34, 2, 3, 31, 3, 3, 31, 4, 3, 58, 6, 3, 27, 7, 3, 27, 8, 3, 25, 9, 3, 33, 12, 3, 31, 13, 3, 31, 14, 3, 25, 15, 3, 51, 65516, 3, 25, 65521, 3, 28, 65525, 3, 27, 65527, 3, 25, 65528, 3, 27, 65529, 3, 35, 65530, 3, 26, 65531, 3, 26, 65533, 3, 52, 65534, 3, 31, 65535, 3, 31, 3, 4, 30, 5, 4, 27, 6, 4, 25, 8, 4, 30, 9, 4, 33, 10, 4, 25, 11, 4, 31, 65516, 4, 25, 65521, 4, 28, 65522, 4, 9, 65524, 4, 9, 65525, 4, 25, 65526, 4, 25, 65527, 4, 25, 65528, 4, 35, 65531, 4, 9, 65532, 4, 9, 65533, 4, 25, 65534, 4, 57, 0, 5, 27, 4, 5, 30, 5, 5, 31, 8, 5, 33, 9, 5, 60, 10, 5, 25, 11, 5, 25, 12, 5, 25, 13, 5, 25, 14, 5, 25, 65519, 5, 11, 65527, 5, 35, 65528, 5, 62, 65530, 5, 27, 65532, 5, 25, 65533, 5, 31, 65534, 5, 57, 0, 6, 27, 2, 6, 13, 5, 6, 30, 6, 6, 30, 7, 6, 33, 9, 6, 25, 10, 6, 31, 14, 6, 25, 65515, 6, 25, 65521, 6, 28, 65522, 6, 28, 65524, 6, 25, 65527, 6, 35, 65528, 6, 62, 65530, 6, 9, 65532, 6, 25, 65533, 6, 31, 65534, 6, 57, 65535, 6, 27, 1, 7, 29, 2, 7, 27, 5, 7, 25, 6, 7, 31, 7, 7, 33, 9, 7, 61, 10, 7, 61, 14, 7, 25, 65515, 7, 25, 65520, 7, 27, 65523, 7, 28, 65524, 7, 28, 65525, 7, 12, 65527, 7, 35, 65528, 7, 62, 65531, 7, 25, 65533, 7, 27, 65534, 7, 27, 65535, 7, 57, 0, 8, 27, 1, 8, 29, 2, 8, 29, 5, 8, 25, 6, 8, 27, 9, 8, 25, 10, 8, 25, 65515, 8, 25, 65516, 8, 25, 65518, 8, 25, 65520, 8, 27, 65523, 8, 25, 65524, 8, 25, 65525, 8, 28, 65526, 8, 28, 65527, 8, 35, 65531, 8, 25, 65532, 8, 30, 65533, 8, 31, 65534, 8, 12, 65535, 8, 57, 0, 9, 27, 1, 9, 27, 2, 9, 29, 3, 9, 27, 4, 9, 9, 5, 9, 27, 6, 9, 25, 7, 9, 33, 8, 9, 33, 9, 9, 33, 10, 9, 33, 11, 9, 33, 65520, 9, 27, 65523, 9, 25, 65527, 9, 35, 65529, 9, 28, 65530, 9, 28, 65531, 9, 28, 65532, 9, 30, 65533, 9, 28, 65535, 9, 57, 1, 10, 31, 2, 10, 29, 5, 10, 25, 6, 10, 25, 7, 10, 31, 10, 10, 25, 13, 10, 11, 65520, 10, 27, 65526, 10, 25, 65528, 10, 62, 65529, 10, 27, 65532, 10, 30, 65533, 10, 30, 65534, 10, 31, 0, 11, 31, 4, 11, 25, 5, 11, 25, 6, 11, 25, 65520, 11, 27, 65526, 11, 27, 65527, 11, 35, 65530, 11, 9, 65534, 11, 28, 65535, 11, 31, 2, 12, 29, 65523, 12, 27, 65524, 12, 11, 65527, 12, 35, 65528, 12, 35, 65535, 12, 28, 2, 13, 9, 6, 13, 28, 7, 13, 28, 8, 13, 28, 10, 13, 28, 65520, 13, 27, 65521, 13, 27, 65529, 13, 35, 65530, 13, 35, 65531, 13, 35, 65532, 13, 35, 65533, 13, 35, 65535, 13, 35, 0, 14, 29, 1, 14, 29, 2, 14, 29, 3, 14, 29, 5, 14, 28, 6, 14, 28, 8, 14, 13, 9, 14, 28, 10, 14, 28, 65534, 14, 29, 65535, 14, 29, 0, 15, 29, 1, 15, 29, 2, 15, 29, 3, 15, 29, 4, 15, 29, 5, 15, 29, 65521, 15, 29, 65523, 15, 29, 65524, 15, 29, 65525, 15, 29, 65526, 15, 29, 65527, 15, 29, 65528, 15, 29, 65529, 15, 29, 65530, 15, 29, 65531, 15, 29, 65532, 15, 29, 65533, 15, 29, 65534, 15, 29, 65535, 15, 29, 0, 16, 29, 1, 16, 29, 2, 16, 29, 5, 16, 29, 65534, 16, 29, 65535, 16, 29, 4, 17, 29, 0, 18, 62, 1, 18, 62, 4, 18, 29, 65533, 18, 62, 65535, 18, 62, 65534, 65518, 11, 65535, 65518, 11, 0, 65519, 28, 65529, 65519, 34, 65530, 65519, 28, 65531, 65519, 28, 65532, 65519, 34, 65533, 65519, 34, 65534, 65519, 28, 65535, 65519, 28, 2, 65520, 28, 65528, 65520, 34, 65529, 65520, 28, 65530, 65520, 28, 65533, 65520, 54, 65535, 65520, 54, 1, 65521, 54, 3, 65521, 28, 4, 65521, 54, 8, 65521, 11, 65524, 65521, 62, 65525, 65521, 62, 65526, 65521, 62, 65528, 65521, 28, 65529, 65521, 13, 65532, 65521, 9, 3, 65522, 28, 4, 65522, 54, 6, 65522, 54, 7, 65522, 54, 8, 65522, 54, 65521, 65522, 62, 65523, 65522, 34, 65525, 65522, 25, 65528, 65522, 28, 0, 65523, 9, 2, 65523, 28, 8, 65523, 54, 10, 65523, 12, 65523, 65523, 34, 65524, 65523, 25, 65525, 65523, 25, 65527, 65523, 28, 1, 65524, 28, 3, 65524, 58, 9, 65524, 25, 11, 65524, 25, 12, 65524, 25, 65520, 65524, 62, 65524, 65524, 34, 65526, 65524, 25, 65529, 65524, 26, 65530, 65524, 62, 65531, 65524, 62, 65532, 65524, 62, 1, 65525, 28, 4, 65525, 58, 6, 65525, 28, 7, 65525, 28, 8, 65525, 28, 9, 65525, 25, 12, 65525, 25, 65519, 65525, 62, 65524, 65525, 25, 65526, 65525, 34, 65527, 65525, 28, 65528, 65525, 26, 65529, 65525, 26, 65532, 65525, 10, 65534, 65525, 26, 65535, 65525, 28, 4, 65526, 58, 6, 65526, 9, 8, 65526, 28, 9, 65526, 25, 13, 65526, 25, 65522, 65526, 11, 65524, 65526, 25, 65525, 65526, 13, 65526, 65526, 35, 65527, 65526, 35, 65528, 65526, 35, 65529, 65526, 35, 65530, 65526, 35, 65531, 65526, 35, 65534, 65526, 32, 65535, 65526, 32, 0, 65527, 32, 1, 65527, 32, 2, 65527, 26, 3, 65527, 26, 4, 65527, 58, 6, 65527, 9, 9, 65527, 25, 13, 65527, 25, 15, 65527, 13, 65518, 65527, 62, 65524, 65527, 35, 65525, 65527, 35, 65528, 65527, 34, 65532, 65527, 35, 0, 65528, 35, 2, 65528, 35, 3, 65528, 33, 4, 65528, 33, 5, 65528, 35, 6, 65528, 33, 8, 65528, 35, 9, 65528, 28, 10, 65528, 35, 11, 65528, 51, 65524, 65528, 25, 65526, 65528, 35, 65527, 65528, 35, 65528, 65528, 35, 65529, 65528, 34, 65530, 65528, 35, 65531, 65528, 35, 65532, 65528, 35, 65533, 65528, 35, 65534, 65528, 35, 65535, 65528, 35, 1, 65529, 33, 2, 65529, 33, 3, 65529, 30, 4, 65529, 58, 6, 65529, 33, 7, 65529, 60, 8, 65529, 30, 9, 65529, 25, 10, 65529, 25, 12, 65529, 51, 13, 65529, 25, 65522, 65529, 13, 65523, 65529, 35, 65525, 65529, 26, 65526, 65529, 35, 65529, 65529, 53, 65530, 65529, 53, 65531, 65529, 53, 65532, 65529, 53, 65533, 65529, 53, 65535, 65529, 34, 0, 65530, 33, 1, 65530, 52, 2, 65530, 30, 3, 65530, 25, 4, 65530, 58, 7, 65530, 33, 8, 65530, 28, 9, 65530, 25, 65523, 65530, 35, 65524, 65530, 25, 65525, 65530, 60, 65526, 65530, 35, 65528, 65530, 53, 65529, 65530, 53, 65532, 65530, 12, 65533, 65530, 25, 65534, 65530, 25, 65535, 65530, 33, 0, 65531, 25, 1, 65531, 52, 2, 65531, 26, 3, 65531, 26, 4, 65531, 58, 5, 65531, 62, 6, 65531, 62, 7, 65531, 33, 8, 65531, 28, 14, 65531, 51, 65523, 65531, 35, 65526, 65531, 28, 65527, 65531, 53, 65528, 65531, 27, 65529, 65531, 28, 65530, 65531, 27, 65531, 65531, 60, 65533, 65531, 35, 65534, 65531, 32, 65535, 65531, 32, 0, 65532, 50, 1, 65532, 50, 2, 65532, 50, 4, 65532, 58, 5, 65532, 25, 6, 65532, 30, 12, 65532, 25, 15, 65532, 51, 65522, 65532, 9, 65523, 65532, 35, 65524, 65532, 28, 65525, 65532, 53, 65526, 65532, 53, 65527, 65532, 27, 65528, 65532, 35, 65532, 65532, 25, 65533, 65532, 50, 65534, 65532, 50, 65535, 65532, 50, 0, 65533, 52, 2, 65533, 28, 3, 65533, 26, 4, 65533, 58, 5, 65533, 30, 6, 65533, 28, 12, 65533, 9, 14, 65533, 25, 15, 65533, 51, 65519, 65533, 11, 65523, 65533, 35, 65524, 65533, 35, 65525, 65533, 53, 65527, 65533, 27, 65528, 65533, 50, 65529, 65533, 50, 65530, 65533, 50, 65531, 65533, 50, 65532, 65533, 35, 65533, 65533, 25, 65535, 65533, 25, 0, 65534, 30, 1, 65534, 25, 2, 65534, 30, 4, 65534, 58, 5, 65534, 26, 6, 65534, 25, 7, 65534, 25, 8, 65534, 33, 11, 65534, 25, 15, 65534, 51, 65522, 65534, 28, 65525, 65534, 35, 65526, 65534, 27, 65528, 65534, 35, 65529, 65534, 57, 65531, 65534, 25, 65532, 65534, 25, 65533, 65534, 26, 65534, 65534, 26, 65535, 65534, 52, 0, 65535, 30, 1, 65535, 26, 2, 65535, 25, 4, 65535, 58, 8, 65535, 25, 15, 65535, 51, 65521, 65535, 25, 65522, 65535, 28, 65524, 65535, 9, 65526, 65535, 27, 65527, 65535, 35, 65528, 65535, 35, 65529, 65535, 35, 65531, 65535, 35, 65532, 65535, 26, 65535, 65535, 34 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 0, 0 )
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="WorldEnvironment_MoonBurst" type="WorldEnvironment" parent="."]
+environment = SubResource( 7 )
+
+[node name="DirectionalLight_MoonBurst" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.849579, 0.527461, 0, -0.527461, 0.849579, 0, 26.5368, 0 )
+light_color = Color( 0.52549, 0.619608, 0.733333, 1 )
+light_energy = 0.32
+light_specular = 1.0
+
+[node name="RocheCollision" type="Node" parent="."]
+
+[node name="Roche1" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, 14.9196, 2, -12.6389 )
+
+[node name="CollisionShape" type="CollisionShape" parent="RocheCollision/Roche1"]
+shape = SubResource( 10 )
+
+[node name="Roche17" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, -9.20842, 2, -8.89119 )
+
+[node name="CollisionShape" type="CollisionShape" parent="RocheCollision/Roche17"]
+shape = SubResource( 10 )
+
+[node name="Roche18" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, -21.3507, 2, -10.8207 )
+
+[node name="CollisionShape" type="CollisionShape" parent="RocheCollision/Roche18"]
+shape = SubResource( 10 )
+
+[node name="Roche2" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, 10.9311, 2, -8.28315 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche2"]
+shape = SubResource( 12 )
+
+[node name="Roche8" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, 13.0664, 2, -8.28315 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche8"]
+shape = SubResource( 12 )
+
+[node name="Roche9" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -14.968, 2, 11.4564 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche9"]
+shape = SubResource( 12 )
+
+[node name="Roche10" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -14.968, 2, 13.4849 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche10"]
+shape = SubResource( 12 )
+
+[node name="Roche19" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -14.968, 2, 13.4849 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche19"]
+shape = SubResource( 12 )
+
+[node name="Roche20" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -11.1249, 2, -22.2149 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche20"]
+shape = SubResource( 12 )
+
+[node name="Roche21" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -8.86426, 2, -22.2149 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche21"]
+shape = SubResource( 12 )
+
+[node name="Roche22" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -6.6218, 2, -22.2149 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche22"]
+shape = SubResource( 12 )
+
+[node name="Roche23" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -18.5949, 2, -28.3867 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche23"]
+shape = SubResource( 12 )
+
+[node name="Roche26" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -29.1964, 2, -26.4474 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche26"]
+shape = SubResource( 12 )
+
+[node name="Roche27" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -30.8771, 2, -22.5688 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche27"]
+shape = SubResource( 12 )
+
+[node name="Roche28" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -32.9457, 2, -20.2417 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche28"]
+shape = SubResource( 12 )
+
+[node name="Roche29" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -35.0143, 2, -16.2338 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche29"]
+shape = SubResource( 12 )
+
+[node name="Roche24" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -20.7928, 2, -28.3867 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche24"]
+shape = SubResource( 12 )
+
+[node name="Roche25" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -23.1199, 2, -28.2574 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche25"]
+shape = SubResource( 12 )
+
+[node name="Roche12" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -14.968, 2, 21.7909 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche12"]
+shape = SubResource( 12 )
+
+[node name="Roche13" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, 3.22814, 2, 37.8238 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche13"]
+shape = SubResource( 12 )
+
+[node name="Roche14" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, 1.55303, 2, 37.8238 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche14"]
+shape = SubResource( 12 )
+
+[node name="Roche15" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -0.839959, 2, 37.8238 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche15"]
+shape = SubResource( 12 )
+
+[node name="Roche16" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -5.14734, 2, 37.8238 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche16"]
+shape = SubResource( 12 )
+
+[node name="Roche11" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -14.968, 2, 15.8903 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="RocheCollision/Roche11"]
+shape = SubResource( 12 )
+
+[node name="Roche3" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 19, 1.9, 11.47 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="RocheCollision/Roche3"]
+shape = SubResource( 11 )
+
+[node name="Roche6" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 19, 1.9, 0.950251 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="RocheCollision/Roche6"]
+shape = SubResource( 11 )
+
+[node name="Roche7" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 16.8184, 1.9, 0.950251 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="RocheCollision/Roche7"]
+shape = SubResource( 11 )
+
+[node name="Roche4" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 19, 1.9, 15.1586 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="RocheCollision/Roche4"]
+shape = SubResource( 11 )
+
+[node name="Roche5" type="StaticBody" parent="RocheCollision"]
+transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 21.1088, 1.9, 15.1586 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="RocheCollision/Roche5"]
+shape = SubResource( 11 )

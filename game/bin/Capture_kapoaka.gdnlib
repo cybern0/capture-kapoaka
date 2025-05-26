@@ -1,0 +1,19 @@
+[general]
+
+singleton=false
+load_once=true
+symbol_prefix="godot_"
+reloadable=true
+
+[entry]
+
+X11.64="res://bin/x11/Online_Capture_kapoaka.so"
+Windows.64="res://bin/win64/Online_Capture_kapoaka.dll"
+Windows.32="res://bin/win32/Online_Capture_kapoaka.dll"
+OSX.64="res://bin/osx/Online_Capture_kapoaka.dylib"
+
+[dependencies]
+
+X11.64=[  ]
+Windows.64=[  ]
+OSX.64=[  ]

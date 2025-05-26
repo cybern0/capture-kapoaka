@@ -1,0 +1,12 @@
+game/.import/
+*.import
+
+*.o
+*.os
+*.obj
+*.bc
+*.pyc
+*.dblite
+*.pdb
+
+*.log
